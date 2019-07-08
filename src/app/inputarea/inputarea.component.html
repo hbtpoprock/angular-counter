@@ -1,0 +1,11 @@
+<div class="inputarea">
+    <input type="number" class="spacing" [(ngModel)]="int">
+    <button class="inc" (click)="inc()">+</button>
+    <button class="dec spacing" (click)="dec()">-</button>
+    <button class="reset" (click)="reset()">reset</button>
+    <br>
+    <br>
+    <button class="submit" (click)="render()">submit</button>
+</div>
+<br>
+<app-renderer [int]="result"></app-renderer>

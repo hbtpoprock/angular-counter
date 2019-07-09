@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
     selector: 'app-renderer',
@@ -7,14 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 
 })
 export class RendererComponent implements OnInit {
-    // test: string;
+    @Input() result: number;
+    @Input() rendered: number;
 
-    @Input() int: number;
+    constructor() {
 
-    constructor() { }
+    }
 
     ngOnInit() {
-        // We call a service that gets us the data
-        // this.test = 'Hello World';
+
     }
 }

@@ -1,7 +1,7 @@
-h3, p {
+p, a {
     display: inline;
 }
 
-h3 {
+a {
     margin-right: 10px;
 }

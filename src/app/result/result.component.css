@@ -1,0 +1,16 @@
+.result {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.spacing {
+    margin-right: 10px
+}
+
+h3, p {
+    display: inline;
+}
+
+a {
+    display: block;
+}

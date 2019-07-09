@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class InputAreaComponent implements OnInit {
     int: number;
     result: number;
+    rendered: number;
 
     inc() {
         if (!this.int) {
@@ -29,10 +30,21 @@ export class InputAreaComponent implements OnInit {
     }
 
     render() {
-        this.result = this.int;
+        this.result = this.rendered = this.int;
+        if (!(this.int || this.int === 0)) {
+            this.rendered = 0;
+        }
+
+        console.log('this.int ' + this.int);
+        console.log('this.result ' + this.result);
+        console.log('this.rendered ' + this.rendered);
     }
 
-    constructor() { }
+    constructor() {
+        if (!(this.int || this.int === 0)) {
+            this.rendered = 0;
+        }
+    }
 
     ngOnInit() {
 
